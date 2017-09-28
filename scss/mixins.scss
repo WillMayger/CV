@@ -1,0 +1,8 @@
+//fixes clearing issue safely.
+@mixin float-fix() {
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}

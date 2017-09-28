@@ -1,0 +1,103 @@
+$slant-text-background: transparentize(#333, 0.05);
+$slant-text-min-height: 500px;
+
+.slant-text {
+  position: relative;
+  display: block;
+  min-height: $slant-text-min-height;
+  background: $slant-text-background;
+  //fixes clearing issue safely.
+  @include float-fix();
+
+  &.right {
+    float: right;
+    clear: both;
+    text-align: right;
+  }
+
+  &.left {
+    float: left;
+    clear: both;
+    text-align: left;
+
+    .border {
+      position: relative;
+      display: block;
+      height: 100%;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: auto;
+        width: auto;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        border-top: $slant-text-min-height solid transparent;
+        border-bottom: 0;
+        border-right: 0;
+        border-left: ($slant-text-min-height / 3) solid $slant-text-background;
+      }
+    }
+  }
+
+  &.half {
+    width: 60%;
+  }
+
+  .text-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparentize(#fff, 0.3);
+    padding: 30px;
+    padding-right: 0;
+
+    span {
+      display: inline-block;
+    }
+
+      &.bracket-system {
+
+        .line {
+          display: block;
+          padding: 10px 0;
+          padding-right: 0;
+          font-size: 34px;
+        }
+
+        span {
+
+          &:not(.line-number) {
+            padding-left: 40px;
+
+            &.bracket,
+            span {
+              padding-left: 0;
+            }
+          }
+
+          &.line-number {
+            position: relative;
+            top: 3px;
+            padding: 0 30px 0 5px;
+            color: transparentize(#fff, 0.5);
+          }
+
+          span {
+            display: inline-block;
+            font-size: 36px;
+          }
+
+          .const {
+            position: relative;
+            padding-right: 20px;
+            font-size: 34px;
+            top: 1px;
+          }
+        }
+      }
+    }
+  }
