@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { personal } from '../personal.js'; //personal info like phone number.
+import { skills as importedSkills } from '../skills.js'; //personal info like phone number.
 
 import { DetailRegion } from './regions/DetailRegion';
 import { NavRegion } from './regions/NavRegion';
@@ -15,16 +16,7 @@ export class CV extends Component {
         {type: 'email', value: personal.email},
       ],
       regions: ['Skills', 'Summary', '', '...', 'Downloads'],
-      skills: [
-        {
-          name: 'Node.js',
-          icon: 'nodejs.png'
-        },
-        {
-          name: 'React.js',
-          icon: 'reactjs.png'
-        },
-      ]
+      skills: importedSkills
     }
   }
 
