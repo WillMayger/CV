@@ -1,15 +1,21 @@
 //This file is setting up containers / emulating bootstrap.
 
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1366px; //Most common size.
+  box-shadow: 0 0 20px 0 #000;
+}
+
 .container-wrap {
   display: block;
   width: 100%;
 
   .container {
+    display: block;
+    box-sizing: border-box;
     width: 100%;
-    margin: 0 auto;
     padding: 0 10px;
-    max-width: 1366px; //Most common size.
-    box-shadow: 0 0 20px 0 #000;
 
     .row {
       margin: 0 -10px;

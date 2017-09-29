@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 
 export class SlantText extends Component {
   render() {
+    const lines = this.props.personal.map((item, index) => {
+      return (
+        <div key={item.type} className="line">
+          <span className="line-number">{(index + 2) + ""}</span>
+          <span className="item.type">{item.type}: {'"'}
+            <span className="bold">{item.value}</span>
+          {'"'},</span>
+        </div>
+      );
+    });
+    const lineLength = this.props.personal.length;
+
     return (
       <div className={"slant-text half " + this.props.align}>
         <div className="border"></div>
@@ -15,24 +27,9 @@ export class SlantText extends Component {
                webDeveloper {' = {'}
             </span>
           </div>
-
+          {lines}
           <div className="line">
-            <span className="line-number">2</span><span className="name">name: {'"'}<span className="bold">{this.props.name}</span>{'"'},</span>
-          </div>
-          <div className="line">
-            <span className="line-number">3</span>
-            <span className="email">email: {'"'}
-              <span className="bold">{this.props.email}</span>
-            {'"'},</span>
-          </div>
-          <div className="line">
-            <span className="line-number">4</span>
-            <span className="phone">phone: {'"'}
-              <span className="bold">{this.props.phone}</span>
-            {'"'}</span>
-          </div>
-          <div className="line">
-            <span className="line-number">5</span>
+            <span className="line-number">{(lineLength + 2) + ''}</span>
             <span className="bracket">{"};"}</span>
           </div>
           </div>

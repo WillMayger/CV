@@ -1,27 +1,52 @@
 import React, { Component } from 'react';
 import { personal } from '../personal.js'; //personal info like phone number.
 
-import { DetailRegion } from './DetailRegion';
+import { DetailRegion } from './regions/DetailRegion';
+import { NavRegion } from './regions/NavRegion';
+import { SkillsRegion } from './regions/SkillsRegion';
 
 export class CV extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'Will Mayger',
-      phone: personal.phone,
-      dateOfBirth: personal.dateOfBirth,
-      address: personal.address,
-      email: personal.email
+      personal: [
+        {type: 'name', value: personal.name},
+        {type: 'phone', value: personal.phone},
+        {type: 'email', value: personal.email},
+      ],
+      regions: ['Skills', 'Summary', '', '...', 'Downloads'],
+      skills: [
+        {
+          name: 'Node.js',
+          icon: 'nodejs.png'
+        },
+        {
+          name: 'React.js',
+          icon: 'reactjs.png'
+        },
+      ]
     }
   }
 
-  render() {
-    const props = JSON.parse(JSON.stringify(this.state)); //deep copy to avoid mutation.
-    props.align = 'left';
+  regionToAnchorPoint(regionValue) {
+    let region = regionValue;
+    region = region.toString().split(' ').join('').toLowerCase();
+    return region;
+  }
 
+  render() {
     return (
       <div className="wrap">
-        <DetailRegion {...props} />
+        <DetailRegion personal={this.state.personal} />
+        <NavRegion
+          convert={this.regionToAnchorPoint}
+          regions={this.state.regions}
+        />
+        <SkillsRegion
+          region={this.state.regions[0]}
+          convert={this.regionToAnchorPoint}
+          skills={this.state.skills}
+        />
       </div>
     );
   }

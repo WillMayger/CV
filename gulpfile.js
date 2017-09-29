@@ -25,9 +25,10 @@ gulp.task('start', function() {
 });
 
 gulp.task('scss', function(){
-    const scssStream = gulp.src(['./scss/mixins.scss', './scss/**/**/*.scss'])
+    const scssStream = gulp.src(['./scss/mixins.scss', './scss/colours.scss', './scss/**/**/*.scss'])
         .pipe(concat('main.scss'))
         .pipe(sass())
+        .pipe(concat('main.scss'))
     ;
 
     return merge(scssStream)

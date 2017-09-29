@@ -1,0 +1,14 @@
+.nav {
+  border-top: 7px solid $marrs-green;
+  border-bottom: 7px solid $marrs-green;
+  line-height: 70px;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 0 30px;
+
+  .arrow-func {
+    position: relative;
+    top: 2px;
+    padding: 0 10px;
+  }
+}
