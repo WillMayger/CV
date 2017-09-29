@@ -15,7 +15,7 @@ export class SlantText extends Component {
     const lineLength = this.props.personal.length;
 
     return (
-      <div className={"slant-text half " + this.props.align}>
+      <div className={"slant-text left half " + this.props.align}>
         <div className="border"></div>
           <div className="text-box bracket-system heading">
           <div className="line">
