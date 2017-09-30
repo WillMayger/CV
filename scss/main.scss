@@ -11,11 +11,26 @@ body {
 .heading {
   font-size: 35px;
 }
+//modules
+
+.module-padding {
+  padding: 0 30px;
+}
 
 //type
 
 h2 {
   display: inline-block;
+  font-size: 30px;
+  color: #333;
+}
+
+[class*='323333'] {
+  color: #eee;
+  
+  h2 {
+    color: #eee;
+  }
 }
 
 //utils

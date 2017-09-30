@@ -1,11 +1,15 @@
 .anchor-point {
   display: inline-block;
-  padding-left: 30px;
+  padding-left: 21px;
 
   &:after {
     content: "/";
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 21px;
+  }
+
+  &.last:after {
+    content: '';
   }
 
   div {
@@ -17,7 +21,9 @@
     text-decoration: none;
     transition: 0.5s all;
     padding: 0 5px;
-    color: $const-orange;
+    cursor: pointer;
+    color: $marrs-green;
+
     &:before,
     &:after {
       content: "[";

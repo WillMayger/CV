@@ -1,13 +1,10 @@
-.skills-region {
-  padding: 0 30px;
-}
-
 .skill {
   display: inline-block;
   cursor: pointer;
   max-height: 100px;
   max-width: 100px;
-  padding: 10px 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: all 0.3s;
 
   img {

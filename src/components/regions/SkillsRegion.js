@@ -19,7 +19,7 @@ export class SkillsRegion extends Component {
 
     return (
       <Container background={backgroundColor}>
-        <div id={this.props.convert(this.props.region)} className="skills-region">
+        <div id={this.props.convert(this.props.region)} className="skills-region module-padding">
           <StandardText region={this.props.region} />
           {skills}
         </div>

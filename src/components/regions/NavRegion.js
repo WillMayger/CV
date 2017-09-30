@@ -7,7 +7,7 @@ export class NavRegion extends Component {
   render() {
     const backgroundColor = '#fff';
     return (
-      <Container background={backgroundColor}>
+      <Container noSlant={true} background={backgroundColor}>
         <div className="nav-region">
           <Nav {...this.props}/>
         </div>

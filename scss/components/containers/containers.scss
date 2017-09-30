@@ -1,6 +1,7 @@
 //This file is setting up containers / emulating bootstrap.
 
 .wrap {
+  overflow: hidden;
   width: 100%;
   margin: 0 auto;
   max-width: 1366px; //Most common size.
@@ -12,7 +13,6 @@
   width: 100%;
 
   .container {
-    display: block;
     box-sizing: border-box;
     width: 100%;
     padding: 0 10px;
@@ -22,6 +22,42 @@
 
       //fixes clearing issue safely.
       @include float-fix();
+    }
+
+    &.slant {
+      position: relative;
+      padding-bottom: 170px;
+
+      .slant {
+        position: absolute;
+        height: auto;
+        width: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-right: 1366px solid transparent;
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 100px solid #323333;
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          z-index: 1;
+          width: 1500px;
+          background: $marrs-green;
+          transform: rotate(4.2deg);
+          height: 10px;
+          top: 38px;
+          left: -100px;
+          right: 0;
+        }
+      }
+
+      .slant-323333 {
+        border-bottom: 100px solid #fff;
+      }
     }
   }
 }
