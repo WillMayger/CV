@@ -1,4 +1,6 @@
 export const text = [
+  `Here are all my skills`
+  ,
   `I have been implementing these skills in many ways, some from day one such as Javascript, HTML, CSS, Git and JQuery.
 
 Many were by pair programming with expert level senior developers as well as a senior designer in Atos / Canopy whilst using the Extreme Programming Agile Methodology together with test driven development where I have anchored my own team. This was a very close team environment which we all enjoyed and learnt much from each other.
@@ -39,5 +41,30 @@ After, I was moved into Engineering within Atos which was solely setting up serv
 In Gforces our main aim was to create pixel perfect responsive websites for some huge clients in the vehicle industry. The websites we make have to work for every pixel from 320px to 1920px on every browser that has a big enough user base.
 
 In Gforces we use bespoke software to get things running quickly. There is the software the websites run off of and then the software that we use to help us build the sites. I took it upon myself to actively help add to the software that help us build sites (built with node.js (es6), Mithril.js and electron). We also have to use some pretty complex front end javascript and jquery on the sites for a lot of clients to do various, different things.
+`,
+`01/07/2014 - 10/07/2015 - Apprentice Software and Web Developer at Canopy Cloud (ATOS) - PaaS Team
+01/07/2015 - 01/03/2016 - Web Developer and Web Designer at Atos / Canopy Cloud (ATOS) - Research, Innovation and Incubation Team
+01/03/2016 - 01/07/2016- Web Developer / Web Designer / Engineer at Atos Engineering
+01/08/2016 - Current Date - Front End Web Developer at Gforces
+01/01/2016 - Current Date -  Private Web Designer and Developer in free time as http://theweblancer.co.uk
+`,
+`
+GCSE: English – C
+GCSE: Maths – C
+GCSE: I.C.T – C
+GCSE: Biology – C
+GCSE: Chemistry – C
+GCSE: Physics – C
+GCSE: Citizenship Studies – C
+GCSE: Work skills (BTEC) – C
+GCSE: Sport (BTEC) – C
+
+AS-LEVEL: Photography - A
+AS-LEVEL: Certificate in financial studies - A
+AS-LEVEL: Art – D
+A-LEVEL: Photography - A*
+A-LEVEL: Diploma in financial studies - A
+A-LEVEL: Forensic science – Pass
+City and Guilds Software and Web Development level 3
 `
 ];

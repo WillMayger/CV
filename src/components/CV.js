@@ -8,6 +8,7 @@ import { DetailRegion } from './regions/DetailRegion';
 import { NavRegion } from './regions/NavRegion';
 import { SkillsRegion } from './regions/SkillsRegion';
 import { ContentRegion } from './regions/ContentRegion';
+import { ReferenceRegion } from './regions/ReferenceRegion';
 import { DownloadRegion } from './regions/DownloadRegion';
 
 export class CV extends Component {
@@ -28,7 +29,22 @@ export class CV extends Component {
         'Development',
         'Career History',
         'Education',
+        'References',
         'Downloads'
+      ],
+      references: [
+        {
+          name: 'test',
+          email: 'test',
+          phone: 'test',
+          position: 'test'
+        },
+        {
+          name: 'test',
+          email: 'test',
+          phone: 'test',
+          position: 'test'
+        }
       ],
       cDoc: '',
       doc: '',
@@ -44,6 +60,20 @@ export class CV extends Component {
   }
 
   render() {
+    const content = this.state.text.map((item, index) => {
+      if (index === 0) return;
+      const color = index % 2 ? '#323333' : '#fff'; //if index is odd
+      return (
+        <ContentRegion
+          key={index + color}
+          convert={this.regionToAnchorPoint}
+          background={color}
+          region={this.state.regions[index]}
+          text={this.state.text[index]}
+        />
+      );
+    });
+
     return (
       <div className="wrap">
         <DetailRegion personal={this.state.personal} />
@@ -53,30 +83,19 @@ export class CV extends Component {
         />
         <SkillsRegion
           region={this.state.regions[0]}
+          text={this.state.text[0]}
           convert={this.regionToAnchorPoint}
           skills={this.state.skills}
         />
-        <ContentRegion
+        {content}
+        <ReferenceRegion
+          region={this.state.regions[6]}
           convert={this.regionToAnchorPoint}
-          background={'#323333'}
-          region={this.state.regions[1]}
-          text={this.state.text[0]}
-        />
-        <ContentRegion
-          convert={this.regionToAnchorPoint}
-          background={'#fff'}
-          region={this.state.regions[2]}
-          text={this.state.text[1]}
-        />
-        <ContentRegion
-          convert={this.regionToAnchorPoint}
-          background={'#323333'}
-          region={this.state.regions[3]}
-          text={this.state.text[2]}
+          references={this.state.references}
         />
         <DownloadRegion
           convert={this.regionToAnchorPoint}
-          region={this.state.regions[4]}
+          region={this.state.regions[7]}
           cDoc={this.state.cDoc}
           doc={this.state.doc}
           pdf={this.state.pdf}

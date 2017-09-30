@@ -20,7 +20,7 @@ export class Nav extends Component {
     return (
       <div className="nav">
         <div className="inner">
-          <span className="info">( ...Jump to )<span className="marrs-green arrow-func">{' => '}</span>{'{'}</span>
+          <span className="info">( ...jumpTo )<span className="marrs-green arrow-func">{' => '}</span>{'{'}</span>
           {anchors}
           <span className="info">{' }'}</span>
         </div>
