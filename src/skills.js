@@ -45,7 +45,7 @@ export const skills = [
     },
     {
       name: 'Angular',
-      icon: 'angular.png'
+      icon: 'angular.svg'
     },
     {
       name: 'MongoDB',
@@ -64,7 +64,7 @@ export const skills = [
       icon: 'cloudfoundry.png'
     },
     {
-      name: 'Postgres',
+      name: 'Postgresql',
       icon: 'postgres.png'
     },
     {

@@ -46,10 +46,13 @@ export class CV extends Component {
           position: 'test'
         }
       ],
-      cDoc: '',
-      doc: '',
-      cPdf: '',
-      pdf: ''
+      downloads: [
+        {
+          src: '/doc.docx',
+          img: 'docimg.jpg',
+          name: 'doc.docx'
+        }
+      ]
     }
   }
 
@@ -96,10 +99,7 @@ export class CV extends Component {
         <DownloadRegion
           convert={this.regionToAnchorPoint}
           region={this.state.regions[7]}
-          cDoc={this.state.cDoc}
-          doc={this.state.doc}
-          pdf={this.state.pdf}
-          cPdf={this.state.cPdf}
+          downloads={this.state.downloads}
         />
       </div>
     );
