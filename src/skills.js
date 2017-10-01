@@ -13,94 +13,94 @@ export const skills = [
     },
     {
       name: 'Git',
-      icon: 'git.png'
+      icon: 'git.jpg'
     },
     {
       name: 'CSS',
-      icon: 'css3.png'
+      icon: 'css3.jpg'
     },
     {
       name: 'HTML',
-      icon: 'html5.png'
+      icon: 'html5.jpg'
     },
     {
       name: 'Jquery',
-      icon: 'jquery.png'
+      icon: 'jquery.jpg'
     },
     {
       name: 'Less',
-      icon: 'less.png'
+      icon: 'less.jpg'
     },
     {
       name: 'scss',
-      icon: 'sass.svg'
+      icon: 'sass.svg.jpg'
     },
     {
       name: 'ES6',
-      icon: 'es6.png'
+      icon: 'es6.jpg'
     },
     {
       name: 'Chai',
-      icon: 'chai.png'
+      icon: 'chai.jpg'
     },
     {
       name: 'Angular',
-      icon: 'angular.svg'
+      icon: 'angular.svg.jpg'
     },
     {
       name: 'MongoDB',
-      icon: 'mongo.png'
+      icon: 'mongo.jpg'
     },
     {
       name: 'AWS',
-      icon: 'aws.png'
+      icon: 'aws.jpg'
     },
     {
       name: 'Heroku',
-      icon: 'heroku.png'
+      icon: 'heroku.jpg'
     },
     {
       name: 'Cloud Foundry',
-      icon: 'cloudfoundry.png'
+      icon: 'cloudfoundry.jpg'
     },
     {
       name: 'Postgresql',
-      icon: 'postgres.png'
+      icon: 'postgres.jpg'
     },
     {
       name: 'Python',
-      icon: 'python.png'
+      icon: 'python.jpg'
     },
     {
       name: 'Django',
-      icon: 'django.png'
+      icon: 'django.jpg'
     },
     {
       name: 'Flask',
-      icon: 'flask.png'
+      icon: 'flask.jpg'
     },
     {
       name: 'Photoshop',
-      icon: 'photoshop.png'
+      icon: 'photoshop.jpg'
     },
     {
       name: 'Bootstrap',
-      icon: 'bootstrap.png'
+      icon: 'bootstrap.jpg'
     },
     {
       name: 'C#',
-      icon: 'csharp.png'
+      icon: 'csharp.jpg'
     },
     {
       name: 'ASP.NET',
-      icon: 'aspnet.png'
+      icon: 'aspnet.jpg'
     },
     {
       name: 'MySQL',
-      icon: 'mysql.png'
+      icon: 'mysql.jpg'
     },
     {
       name: 'Java',
-      icon: 'java.png'
+      icon: 'java.jpg'
     }
 ];

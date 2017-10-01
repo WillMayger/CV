@@ -6,6 +6,7 @@
     float: left;
     width: 33.333333%;
     padding: 30px;
+    font-weight: 300;
     
     .inner {
       text-align: center;
@@ -28,6 +29,7 @@
       &.name {
         line-height: 40px;
         font-size: 28px;
+        font-weight: 700;
       }
     }
   }

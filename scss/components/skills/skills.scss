@@ -3,8 +3,20 @@
   padding-top: 30px;
   
   .standard-text {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
+}
+
+.selected-skill {
+  display: block;
+  margin: 0 auto 30px;
+  width: 150px;
+  line-height: 60px;
+  height: 60px;
+  font-size: 21px;
+  border-radius: 5px;
+  background: transparentize(#000, 0.3);
+  color: #fff;
 }
 
 .skill {

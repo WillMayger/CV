@@ -8,7 +8,7 @@ export class SkillsRegion extends Component {
   constructor() {
     super();
     this.state = {
-      selected: ''
+      selected: 'Node.js'
     }
     this.updateSelected = this.updateSelected.bind(this);
   }
