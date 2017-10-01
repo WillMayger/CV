@@ -79,13 +79,13 @@ export class CV extends Component {
       downloads: [
         {
           src: '/doc.docx',
-          img: 'docimg.jpg',
+          img: 'docimg.png',
           name: 'doc.docx',
           link: '/downloads/doc.docx'
         },
         {
           src: '/pdf.pdf',
-          img: 'pdfimg.jpg',
+          img: 'pdfimg.png',
           name: 'pdf.pdf',
           link: '/downloads/pdf.pdf'
         }

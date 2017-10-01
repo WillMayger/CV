@@ -19,7 +19,7 @@ gulp.task('start', function() {
   };
 
   return gulp.src('./*')
-    .pipe(exec('npm start', options))
+    .pipe(exec('npm startdev', options))
     .pipe(exec.reporter(reportOptions))
   ;
 });
