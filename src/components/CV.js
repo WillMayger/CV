@@ -99,7 +99,7 @@ export class CV extends Component {
 
   render() {
     const content = this.state.text.map((item, index) => {
-      if (index === 0) return;
+      if (index === 0) return null;
       const color = index % 2 ? '#323333' : '#fff'; //if index is odd
       return (
         <ContentRegion
