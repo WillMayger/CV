@@ -1,11 +1,11 @@
 .anchor-point {
   display: inline-block;
-  padding-left: 16px;
+  padding-left: 15px;
 
   &:after {
     content: "/";
     display: inline-block;
-    padding-left: 16px;
+    padding-left: 15px;
   }
 
   &.last:after {

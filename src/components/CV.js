@@ -23,6 +23,7 @@ export class CV extends Component {
     this.state = {
       text,
       skills,
+      tooSmall: false,
       personal: [
         {type: 'name', value: personal.name},
         {type: 'phone', value: personal.phone},
@@ -89,6 +90,8 @@ export class CV extends Component {
         }
       ]
     }
+    
+    this.windowResize = this.windowResize.bind(this);
   }
 
   regionToAnchorPoint(regionValue) {
@@ -96,6 +99,24 @@ export class CV extends Component {
     region = region.toString().split(' ').join('').toLowerCase();
     return region;
   }
+  
+  windowResize(e) {
+    let tooSmall = false;
+    if(parseInt(document.getElementsByTagName('body')[0].clientWidth, 10) < 1366) {
+      tooSmall = true;
+    } 
+    this.setState({tooSmall});
+  }
+  
+  componentDidMount() {
+    this.windowResize();
+    window.addEventListener("resize", this.windowResize);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.windowResize);
+  }
+
 
   render() {
     const content = this.state.text.map((item, index) => {
@@ -111,6 +132,16 @@ export class CV extends Component {
         />
       );
     });
+    
+    if (this.state.tooSmall) {
+      return (
+        <div className="too-small">
+        <span>This page is designed to be like a document and is therefor not responsive.
+         Please use a device with a screen size of 1366px or more (most laptops and desktops).
+         Thank you for your understanding.</span>
+        </div>
+      );
+    }
 
     return (
       <div className="wrap">
@@ -136,7 +167,7 @@ export class CV extends Component {
           region={this.state.regions[7]}
           downloads={this.state.downloads}
         />
-      </div>
+        </div>
     );
   }
 }

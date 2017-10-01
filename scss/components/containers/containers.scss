@@ -62,3 +62,53 @@
     }
   }
 }
+
+
+.too-small {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  color: #fff;
+  
+  &.hidden {
+    display: none;
+    visibility: hidden;
+  }
+  
+  span {
+    position: absolute;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 768px)  {
+  .too-small {
+    span {
+      max-width: 350px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+}
+
+@media (min-width: 1100px)  {
+  .too-small {
+    span {
+      max-width: 400px;
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+}
