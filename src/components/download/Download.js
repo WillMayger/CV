@@ -5,7 +5,7 @@ export class Download extends Component {
     return (
       <div className="download-item">
         <div className="inner">
-          <a className={ "" + this.props.link}>
+          <a className={ "" + this.props.link} download="download">
             <img src={ "/images/icon/" + this.props.img} />
             <span className='text'>
               {this.props.name}
