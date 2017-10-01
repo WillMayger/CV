@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 
 import { personal } from '../personal.js'; //personal info like phone number.
 import { skills } from '../skills.js'; //personal info like phone number.
@@ -14,6 +15,11 @@ import { DownloadRegion } from './regions/DownloadRegion';
 export class CV extends Component {
   constructor() {
     super();
+    
+    //setting up smooth scrolling
+    window.__forceSmoothScrollPolyfill__ = true;
+    smoothscroll.polyfill();
+    
     this.state = {
       text,
       skills,
@@ -34,6 +40,30 @@ export class CV extends Component {
       ],
       references: [
         {
+          name: 'Adam Jackson',
+          email: 'adam.jackson@atos.co.uk',
+          phone: '07928827503',
+          position: 'Head of innovation & incubation at Atos'
+        },
+        {
+          name: 'test',
+          email: 'test',
+          phone: 'test',
+          position: 'test'
+        },
+        {
+          name: 'test',
+          email: 'test',
+          phone: 'test',
+          position: 'test'
+        },
+        {
+          name: 'test',
+          email: 'test',
+          phone: 'test',
+          position: 'test'
+        },
+        {
           name: 'test',
           email: 'test',
           phone: 'test',
@@ -49,8 +79,15 @@ export class CV extends Component {
       downloads: [
         {
           src: '/doc.docx',
-          img: 'docimg.jpg',
-          name: 'doc.docx'
+          img: 'docimg.png',
+          name: 'doc.docx',
+          link: '/downloads/doc.docx'
+        },
+        {
+          src: '/pdf.pdf',
+          img: 'pdfimg.png',
+          name: 'pdf.pdf',
+          link: '/downloads/pdf.pdf'
         }
       ]
     }

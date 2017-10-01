@@ -6,10 +6,18 @@ export class Reference extends Component {
     return (
       <div className="reference">
         <div className="inner">
-        {this.props.name}
-        {this.props.email}
-        {this.props.phone}
-        {this.props.position}
+          <span className="name">
+          {this.props.name}
+          </span>
+          <span>
+          {this.props.position}
+          </span>
+          <span>
+          {this.props.email}
+          </span>
+          <span>
+          {this.props.phone}
+          </span>
         </div>
       </div>
     );

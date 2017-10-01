@@ -1,16 +1,30 @@
+.skills-region {
+  text-align: center;
+  padding-top: 30px;
+  
+  .standard-text {
+    padding-bottom: 30px;
+  }
+}
+
 .skill {
   display: inline-block;
+  text-align: center;
+  vertical-align: middle;
   cursor: pointer;
+  line-height: 100px;
   max-height: 100px;
-  max-width: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  max-width: 180px;
+  padding: 15px 30px;
   transition: all 0.3s;
 
   img {
-    display: block;
-    height: 100%;
-    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 100px;
+    max-height: 80px;
+    max-width: 80px;
   }
 
   &:hover {
