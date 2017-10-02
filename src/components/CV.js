@@ -15,15 +15,15 @@ import { DownloadRegion } from './regions/DownloadRegion';
 export class CV extends Component {
   constructor() {
     super();
-    
+
     //setting up smooth scrolling
     window.__forceSmoothScrollPolyfill__ = true;
     smoothscroll.polyfill();
-    
+
     this.state = {
       text,
       skills,
-      tooSmall: false,
+      tooSmall: {small: false, width: 1366},
       personal: [
         {type: 'name', value: personal.name},
         {type: 'phone', value: personal.phone},
@@ -90,7 +90,7 @@ export class CV extends Component {
         }
       ]
     }
-    
+
     this.windowResize = this.windowResize.bind(this);
   }
 
@@ -99,20 +99,23 @@ export class CV extends Component {
     region = region.toString().split(' ').join('').toLowerCase();
     return region;
   }
-  
+
   windowResize(e) {
-    let tooSmall = false;
-    if(parseInt(document.getElementsByTagName('body')[0].clientWidth, 10) < 1366) {
-      tooSmall = true;
-    } 
+    const tooSmall = {
+      small: false,
+      width: parseInt(document.getElementsByTagName('body')[0].clientWidth, 10)
+     };
+    if( tooSmall.width < 1366) {
+      tooSmall.small = true;
+    }
     this.setState({tooSmall});
   }
-  
+
   componentDidMount() {
     this.windowResize();
     window.addEventListener("resize", this.windowResize);
   }
-  
+
   componentWillUnmount() {
     window.removeEventListener("resize", this.windowResize);
   }
@@ -132,13 +135,14 @@ export class CV extends Component {
         />
       );
     });
-    
-    if (this.state.tooSmall) {
+
+    if (this.state.tooSmall.small) {
       return (
         <div className="too-small">
-        <span>This page is designed to be like a document and is therefor not responsive.
+        <span>This page is designed to be like a document and is therefore not responsive.
          Please use a device with a screen size of 1366px or more (most laptops and desktops).
-         Thank you for your understanding.</span>
+         Thank you for your understanding.<p></p>
+         Your current screen width is: {this.state.tooSmall.width}px</span>
         </div>
       );
     }
