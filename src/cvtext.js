@@ -1,14 +1,16 @@
 export const text = [
   ``
   ,
-  `I have currently have 3 - 4 years of professional experience in the world of development / web development I have been exposed to a lot of different skills, technologies and processes during this time. The skills listed above are the main ones that I have worked on, however I have worked on more. The reason why I feel I have covered the amount of different things that I have is because I really enjoy learning new things, and improving on what I know.
+  `
+  I have been working in web development professionally for the last 3 - 4 years. I originally started because I had a deep fascination with being able to create things with a computer. The first bit of code I wrote was for making a macronutrients calculator for fitness when I was 16 years old in C#. Ever since I have been completely obsessed with development. The only part of my motives that have changed is that I found I love web development the most, especially with Node.js, which I discovered after I started my apprenticeship in London with the company, Atos.
 
-The skills I have most experience with and am most comfortable using would be JS / Node.js, HTML, CSS, jquery, and git. This is because I have been using them all from the first day I started my career in web development at Atos / Canopy Cloud. This was a very hands on role along with a lot of research. I started developing responsive websites within the first week and throughout the duration of my time there, a lot of the time with different technologies.
+Web development is a deep passion for me, even after I finish a day of work I will happily go home and work on personal projects that usually involve using new technologies to keep me learning and pushing myself forward, not to mention keeping up with the current standards. It fills my need of being challenged, creative.
 
-After the first year we moved into a closed environment with a team of 1 Senior, 1 Mid, and 2 Juniors where we utilized Node.JS, Express.JS, and Cloud Foundry as the main tech stack to develop a GUI website for Cloudfoundry users. We were making use of the Agile methodology Extreme Programming with Pair Programming and TDD. This continued for another year before we finished and then I took the next step in my career.
+I also like to work until the task at hand is completed, at both work, and personal things. Due to this I have a tendency to annoy my girlfriend when working on projects as It takes a while to pull me away from the screen!
 
- I Joined Gforces Web Management where everything is mostly focused on pixel perfect responsive websites that match designs to the pixel. We make tools in Node.js with various frameworks such as mithril.js to help us speed up the process of making and deploying websites. A couple of examples of sites I have done here are: [ http://www.gcmotors.co.uk/]( http://www.gcmotors.co.uk/),  [http://www.hwm.co.uk/](http://www.hwm.co.uk/).
-`
+As a side note, I am actively learning french with a native speaker, my girlfriend (ma petite ami!). I often go over to France to visit her family who do not speak a word of english. This suits me well though as I like the challenge and the learning I get from speaking with them and seeing different parts of the world.
+
+  `
 ,
   `I am currently looking for my career to progress to the next stage, so I can use all the skills I have learnt to this point and improve on them, as well as learn new and challenging things, more specifically in the world of frontend / backend Javascript. `
 ,
