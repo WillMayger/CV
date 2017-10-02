@@ -12,7 +12,10 @@ As a side note, I am actively learning french with a native speaker, my girlfrie
 
   `
 ,
-  `I am currently looking for my career to progress to the next stage, so I can use all the skills I have learnt to this point and improve on them, as well as learn new and challenging things, more specifically in the world of frontend / backend Javascript. `
+`I am looking to keep learning and pushing myself in the world of web development. The main technologies i want to be improving on and utilizing are Node.js / JS, HTML, CSS. I also have a preference to improving on my knowledge of React.JS and making use of it.
+
+I want a role that will keep pushing me and challenging me to learn and improve on new skills as well as build on my existing ones. I would like to and  I am prepared to take on plenty of responsibilities as In my current position we have a lot of responsibilities, builds, tickets and deployments to do with little time to do it so I am used to working under pressure.
+`
 ,
   `I started learning Graphics Design in school whilst doing my Photography AS and A Level. This is where I knew I had a passion in creating beautiful looking designs and photos.
 
@@ -29,12 +32,6 @@ After, I was moved into Engineering within Atos which was solely setting up serv
 In Gforces our main aim was to create pixel perfect responsive websites for some huge clients in the vehicle industry. The websites we make have to work for every pixel from 320px to 1920px on every browser that has a big enough user base.
 
 In Gforces we use bespoke software to get things running quickly. There is the software the websites run off of and then the software that we use to help us build the sites. I took it upon myself to actively help add to the software that help us build sites (built with node.js (es6), Mithril.js and electron). We also have to use some pretty complex front end javascript and jquery on the sites for a lot of clients to do various, different things.
-`,
-`01/07/2014 - 10/07/2015 - Apprentice Software and Web Developer at Canopy Cloud (ATOS) - PaaS Team
-01/07/2015 - 01/03/2016 - Web Developer and Web Designer at Atos / Canopy Cloud (ATOS) - Research, Innovation and Incubation Team
-01/03/2016 - 01/07/2016- Web Developer / Web Designer / Engineer at Atos Engineering
-01/08/2016 - Current Date - Front End Web Developer at Gforces
-01/01/2016 - Current Date -  Private Web Designer and Developer in free time as http://theweblancer.co.uk
 `,
 `
 GCSE: English – C
@@ -56,3 +53,11 @@ A-LEVEL: Forensic science – Pass
 City and Guilds Software and Web Development level 3
 `
 ];
+
+//temp
+const history = `01/07/2014 - 10/07/2015 - Apprentice Software and Web Developer at Canopy Cloud (ATOS) - PaaS Team
+01/07/2015 - 01/03/2016 - Web Developer and Web Designer at Atos / Canopy Cloud (ATOS) - Research, Innovation and Incubation Team
+01/03/2016 - 01/07/2016- Web Developer / Web Designer / Engineer at Atos Engineering
+01/08/2016 - Current Date - Front End Web Developer at Gforces
+01/01/2016 - Current Date -  Private Web Designer and Developer in free time as http://theweblancer.co.uk
+`;

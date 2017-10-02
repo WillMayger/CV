@@ -9,6 +9,7 @@ import { DetailRegion } from './regions/DetailRegion';
 import { NavRegion } from './regions/NavRegion';
 import { SkillsRegion } from './regions/SkillsRegion';
 import { ContentRegion } from './regions/ContentRegion';
+import { HistoryRegion } from './regions/HistoryRegion';
 import { ReferenceRegion } from './regions/ReferenceRegion';
 import { DownloadRegion } from './regions/DownloadRegion';
 
@@ -34,8 +35,8 @@ export class CV extends Component {
         'Profile',
         'Objective',
         'Development',
-        'Career History',
         'Education',
+        'Career History',
         'References',
         'Downloads'
       ],
@@ -88,8 +89,48 @@ export class CV extends Component {
           name: 'cv.pdf',
           link: '/docs/cv.pdf'
         }
-      ]
-    }
+      ],
+      history: [
+        {
+        title: 'Atos Apprentiship',
+        time: {from: '01/07/2014', to: '01/07/2015'},
+        text: 'test text',
+        skills: [
+          {
+            name: 'Node.js',
+            icon: 'nodejs.png'
+          },
+          {
+            name: 'React.js',
+            icon: 'reactjs.png'
+          },
+          {
+            name: 'Express.js',
+            icon: 'expressjs.png'
+          }
+        ]
+      },
+      {
+        title: 'Atos Apprentiship',
+        time: {from: '01/07/2014', to: '01/07/2015'},
+        text: 'test text',
+        skills: [
+          {
+            name: 'Node.js',
+            icon: 'nodejs.png'
+          },
+          {
+            name: 'React.js',
+            icon: 'reactjs.png'
+          },
+          {
+            name: 'Express.js',
+            icon: 'expressjs.png'
+          }
+        ]
+      }
+    ]
+  }
 
     this.windowResize = this.windowResize.bind(this);
   }
@@ -161,6 +202,11 @@ export class CV extends Component {
           skills={this.state.skills}
         />
         {content}
+        <HistoryRegion
+          region={this.state.regions[5]}
+          convert={this.regionToAnchorPoint}
+          history={this.state.history}
+        />
         <ReferenceRegion
           region={this.state.regions[6]}
           convert={this.regionToAnchorPoint}
