@@ -1,0 +1,35 @@
+.history-region {
+  text-align: center;
+  
+  .standard-text{
+     padding-bottom: 30px;
+  }
+}
+
+.history {
+  padding-bottom: 70px;
+  
+  .title {
+    display: block;
+    margin: 0 auto;
+    line-height: 65px;
+    height: 65px;
+    font-size: 31px;
+    width: 90%;
+    border-bottom: 1px solid #333;
+    font-weight: 300;
+    margin-bottom: 30px;
+    
+    .space {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  .content {
+    font-size: 21px;
+    line-height: 30px;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+}

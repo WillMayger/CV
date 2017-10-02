@@ -17,40 +17,26 @@ As a side note, I am actively learning french with a native speaker, my girlfrie
 I want a role that will keep pushing me and challenging me to learn and improve on new skills as well as build on my existing ones. I would like to and  I am prepared to take on plenty of responsibilities as In my current position we have a lot of responsibilities, builds, tickets and deployments to do with little time to do it so I am used to working under pressure.
 `
 ,
-  `I started learning Graphics Design in school whilst doing my Photography AS and A Level. This is where I knew I had a passion in creating beautiful looking designs and photos.
-
-After completing A-Levels with an A* in Photography, I wanted to try something new and give myself a chance to push myself past what I already knew.
-
-I looked to the internet to start learning about coding and web development. Shortly after I got myself an apprenticeship in software and web development. Whilst in this apprenticeship I had courses supplied by QA and work on websites provided by Canopy. However I wanted to expand my knowledge so in my own time I continued looking at blogs, youtube, and sites like codecademy to learn even more. After this I spent many months with a hands on approach to learning by creating websites and software using tools such as HTML, CSS, Javascript, Jquery, Python, Django, node.js and react.js
-
-During my apprenticeship I won apprentice of the year award for innovation.
-
-After my apprenticeship had finished I was taken on as a full time employee where I went into the Research, Innovation and Incubation team where I used the Extreme programming agile methodology. I was closely paring each day with senior developers and a designer in which we used react and node.js to begin with and then changed to using just node.js with express. In my free time I continued to create websites until in the new year a local cricket club needed a new website creating. From this point onwards I have been doing private work in my free time which has really expanded my skills and knowledge.
-
-After, I was moved into Engineering within Atos which was solely setting up servers where I then moved my career to Gforces.
-
-In Gforces our main aim was to create pixel perfect responsive websites for some huge clients in the vehicle industry. The websites we make have to work for every pixel from 320px to 1920px on every browser that has a big enough user base.
-
-In Gforces we use bespoke software to get things running quickly. There is the software the websites run off of and then the software that we use to help us build the sites. I took it upon myself to actively help add to the software that help us build sites (built with node.js (es6), Mithril.js and electron). We also have to use some pretty complex front end javascript and jquery on the sites for a lot of clients to do various, different things.
-`,
 `
-GCSE: English – C
-GCSE: Maths – C
-GCSE: I.C.T – C
-GCSE: Biology – C
-GCSE: Chemistry – C
-GCSE: Physics – C
-GCSE: Citizenship Studies – C
-GCSE: Work skills (BTEC) – C
-GCSE: Sport (BTEC) – C
 
-AS-LEVEL: Photography - A
-AS-LEVEL: Certificate in financial studies - A
-AS-LEVEL: Art – D
-A-LEVEL: Photography - A*
-A-LEVEL: Diploma in financial studies - A
-A-LEVEL: Forensic science – Pass
-City and Guilds Software and Web Development level 3
+- GCSE: English – C
+- GCSE: Maths – C
+- GCSE: I.C.T – C
+- GCSE: Biology – C
+- GCSE: Chemistry – C
+- GCSE: Physics – C
+- GCSE: Citizenship Studies – C
+- GCSE: Work skills (BTEC) – C
+- GCSE: Sport (BTEC) – C
+
+
+- AS-LEVEL: Photography - A
+- AS-LEVEL: Certificate in financial studies - A
+- AS-LEVEL: Art – D
+- A-LEVEL: Photography - A*
+- A-LEVEL: Diploma in financial studies - A
+- A-LEVEL: Forensic science – Pass
+- City and Guilds Software and Web Development level 3
 `
 ];
 

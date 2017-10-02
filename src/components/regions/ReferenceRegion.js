@@ -13,7 +13,7 @@ export class ReferenceRegion extends Component {
     });
 
     return (
-      <Container noSlant={true} background={'#fff'}>
+      <Container background={'#323333'}>
         <div id={this.props.convert(this.props.region)} className="reference-region module-padding">
           <StandardText region={this.props.region} />
           {references}

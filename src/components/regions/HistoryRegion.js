@@ -13,7 +13,7 @@ export class HistoryRegion extends Component {
     });
 
     return (
-      <Container  background={'#323333'}>
+      <Container  background={'#fff'}>
         <div id={this.props.convert(this.props.region)} className="history-region module-padding">
           <StandardText region={this.props.region} />
           {history}
