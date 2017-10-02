@@ -25,9 +25,13 @@ h2 {
   color: #333;
 }
 
+a {
+  color: $marrs-green;
+}
+
 [class*='323333'] {
   color: #eee;
-  
+
   h2 {
     color: #eee;
   }

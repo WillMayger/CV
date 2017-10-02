@@ -1,27 +1,13 @@
 export const text = [
-  `Here are all my skills`
+  ``
   ,
-  `I have been implementing these skills in many ways, some from day one such as Javascript, HTML, CSS, Git and JQuery.
+  `I have currently have 3 - 4 years of professional experience in the world of development / web development I have been exposed to a lot of different skills, technologies and processes during this time. The skills listed above are the main ones that I have worked on, however I have worked on more. The reason why I feel I have covered the amount of different things that I have is because I really enjoy learning new things, and improving on what I know.
 
-Many were by pair programming with expert level senior developers as well as a senior designer in Atos / Canopy whilst using the Extreme Programming Agile Methodology together with test driven development where I have anchored my own team. This was a very close team environment which we all enjoyed and learnt much from each other.
+The skills I have most experience with and am most comfortable using would be JS / Node.js, HTML, CSS, jquery, and git. This is because I have been using them all from the first day I started my career in web development at Atos / Canopy Cloud. This was a very hands on role along with a lot of research. I started developing responsive websites within the first week and throughout the duration of my time there, a lot of the time with different technologies.
 
-In the team described above, we were using a stack of Node.js, Express.js, Less, HTML, CSS, JQuery, Handlebars, Chai, and Cloud Foundry. In this team we were building a complex UI for Cloud Foundry which is a PaaS. This was also full stack development using Git version Control. For the first couple of months we were using React.js as well.
+After the first year we moved into a closed environment with a team of 1 Senior, 1 Mid, and 2 Juniors where we utilized Node.JS, Express.JS, and Cloud Foundry as the main tech stack to develop a GUI website for Cloudfoundry users. We were making use of the Agile methodology Extreme Programming with Pair Programming and TDD. This continued for another year before we finished and then I took the next step in my career.
 
-In Gforces we pay attention to the details, details meaning every pixel has to match the design exactly. For sites we use a few tools but mainly Less, JS and AWS S3 with our own bespoke software for the rest. When we build our tools and software we will tend to use Node.js and we use SVN as version control.
-Some sites I have built at Gforces:
- http://www.gcmotors.co.uk/
- http://www.hwm.co.uk/
-
-
-I create websites privately as well to learn and improve my knowledge and skills as much as possible in web development whilst also trying to grasp knowledge of how to handle and deal with clients, finances and admin related tasks. The last website I made privately was a fitness blog (http://maygerfitness.co.uk) this is mainly using the technology's: JavaScript, Jquery, HTML, Less, Python, Django, Postgres and is being hosted on a heroku server and versioned by git.
-
-I am currently in the process of building a web app for budgeting using a stack off:
-Node.js, Express.js for the API using OAuth2 for Authentication.
-
-A View Layer of: React.js, Node.js, JS, SCSS, HTML.
-This also uses git!
-
-I have come to learn that I have a huge passion for creating websites that are always bringing something new to the table and that really help people and it gives me great pride to say I created it. I keep getting great feedback from everyone I have made websites for and I take enormous pleasure from hearing that my hard work is improving other people's lives. I would say I am always trying new ways to do things, that includes technology to rethinking a bit of logic for a fix. I like to actively make sure I am always learning.
+ I Joined Gforces Web Management where everything is mostly focused on pixel perfect responsive websites that match designs to the pixel. We make tools in Node.js with various frameworks such as mithril.js to help us speed up the process of making and deploying websites. A couple of examples of sites I have done here are: [ http://www.gcmotors.co.uk/]( http://www.gcmotors.co.uk/),  [http://www.hwm.co.uk/](http://www.hwm.co.uk/).
 `
 ,
   `I am currently looking for my career to progress to the next stage, so I can use all the skills I have learnt to this point and improve on them, as well as learn new and challenging things, more specifically in the world of frontend / backend Javascript. `
@@ -42,29 +28,29 @@ In Gforces our main aim was to create pixel perfect responsive websites for some
 
 In Gforces we use bespoke software to get things running quickly. There is the software the websites run off of and then the software that we use to help us build the sites. I took it upon myself to actively help add to the software that help us build sites (built with node.js (es6), Mithril.js and electron). We also have to use some pretty complex front end javascript and jquery on the sites for a lot of clients to do various, different things.
 `,
-`01/07/2014 - 10/07/2015 - Apprentice Software and Web Developer at Canopy Cloud (ATOS) - PaaS Team  
-01/07/2015 - 01/03/2016 - Web Developer and Web Designer at Atos / Canopy Cloud (ATOS) - Research, Innovation and Incubation Team  
-01/03/2016 - 01/07/2016- Web Developer / Web Designer / Engineer at Atos Engineering  
-01/08/2016 - Current Date - Front End Web Developer at Gforces  
-01/01/2016 - Current Date -  Private Web Designer and Developer in free time as http://theweblancer.co.uk  
+`01/07/2014 - 10/07/2015 - Apprentice Software and Web Developer at Canopy Cloud (ATOS) - PaaS Team
+01/07/2015 - 01/03/2016 - Web Developer and Web Designer at Atos / Canopy Cloud (ATOS) - Research, Innovation and Incubation Team
+01/03/2016 - 01/07/2016- Web Developer / Web Designer / Engineer at Atos Engineering
+01/08/2016 - Current Date - Front End Web Developer at Gforces
+01/01/2016 - Current Date -  Private Web Designer and Developer in free time as http://theweblancer.co.uk
 `,
 `
-GCSE: English – C  
-GCSE: Maths – C  
-GCSE: I.C.T – C  
-GCSE: Biology – C  
-GCSE: Chemistry – C  
-GCSE: Physics – C  
-GCSE: Citizenship Studies – C  
-GCSE: Work skills (BTEC) – C  
-GCSE: Sport (BTEC) – C  
+GCSE: English – C
+GCSE: Maths – C
+GCSE: I.C.T – C
+GCSE: Biology – C
+GCSE: Chemistry – C
+GCSE: Physics – C
+GCSE: Citizenship Studies – C
+GCSE: Work skills (BTEC) – C
+GCSE: Sport (BTEC) – C
 
-AS-LEVEL: Photography - A  
-AS-LEVEL: Certificate in financial studies - A  
-AS-LEVEL: Art – D  
-A-LEVEL: Photography - A*  
-A-LEVEL: Diploma in financial studies - A  
-A-LEVEL: Forensic science – Pass  
+AS-LEVEL: Photography - A
+AS-LEVEL: Certificate in financial studies - A
+AS-LEVEL: Art – D
+A-LEVEL: Photography - A*
+A-LEVEL: Diploma in financial studies - A
+A-LEVEL: Forensic science – Pass
 City and Guilds Software and Web Development level 3
 `
 ];
