@@ -13,7 +13,7 @@ const history = [
   {
     title: 'Self Taught',
     time: { from: '03/09/2012', to: '01/07/2014' },
-    text: 'During my A Levels, at home, in my own time I looked to the internet to start learning about development using C# to build a fitness aplication. After I had completed this I moved onto learning Java / Android to create an android application for the fitness application I had made with C#.',
+    text: 'During my A Levels, at home, in my own time I looked to the internet to start learning about development using C# to build a fitness aplication. After I had completed this, I moved onto learning Java / Android to create an android application for the fitness application I had made with C#.',
     skills: [
       {
         name: 'C#',
@@ -28,7 +28,7 @@ const history = [
   {
     title: 'Atos & QA Apprentiship',
     time: { from: '01/07/2014', to: '01/07/2015' },
-    text: 'I applied and successfully got an Apprentiship at QA and then a Apprentiship Job at Atos to go with the training. At the Apprenticeship we learnt about C#, HTML, CSS and ASP.NET which I passed and now have a City and guilds Software and Web Development Qualification. During my time at Atos, however, from day one I started learning about, and putting to use, JS, Node.Js, CSS, HTML, Jquery and Git. I made many internal applications that helped different departments handle certain things such as an application to help the finance department deal with invoices so there was no room for error, which meant losts of testing. During this time we used many different technologys because we chose the best for each individual task that needed to be done. (most listed above)',
+    text: 'I applied and successfully got an Apprentiship at QA and then a Apprentiship Job at Atos to go with the training. In the Apprenticeship we learnt about C#, HTML, CSS and ASP.NET which I passed and now have a City and guilds Software and Web Development Qualification. During my time at Atos, however, from day one I started learning about, and putting to use, JS, Node.Js, CSS, HTML, Jquery and Git. I made many internal applications that helped different departments handle certain things such as an application to help the finance department deal with invoices so there was no room for error, which meant losts of testing. During this time we used many different technologys because we chose the best for each individual task that needed to be done. (most listed above)',
     skills: [
       {
         name: 'Node.js',
@@ -96,7 +96,7 @@ const history = [
   {
     title: 'Atos',
     time: { from: '01/07/2015', to: '01/07/2016' },
-    text: 'This year in Atos we moved into a closed environment with a team of 1 Senior, 1 Mid, and 2 Juniors where we utilized Node.JS, Express.JS, and Cloud Foundry as the main tech stack to develop a GUI website for Cloudfoundry users. We were making use of the Agile methodology Extreme Programming with Pair Programming and TDD. This continued for another year before we finished and then I took the next step in my career.',
+    text: 'This year in Atos we moved into a closed environment with a team of 1 Senior, 1 Mid, and 2 Juniors where we utilized Node.JS, Express.JS, and Cloud Foundry as the main tech stack to develop a GUI website for Cloud foundry users. We were making use of the Agile methodology Extreme Programming with Pair Programming and TDD. This continued for another year before we finished and then I took the next step in my career.',
     skills: [
       {
         name: 'Node.js',
@@ -155,7 +155,7 @@ const history = [
   {
     title: 'Gforces',
     time: { from: '01/08/2016', to: 'Present Date' },
-    text: ' I Joined Gforces Web Management where everything is mostly focused on pixel perfect responsive websites that match designs to the pixel. We make tools in Node.js with various frameworks such as mithril.js to help us speed up the process of making and deploying websites. A couple of examples of sites I have done here are: [ http://www.gcmotors.co.uk/]( http://www.gcmotors.co.uk/),  [http://www.hwm.co.uk/](http://www.hwm.co.uk/).',
+    text: ' I Joined Gforces Web Management where almost everything is mostly focused on pixel perfect responsive websites that match designs to the pixel. We make tools in Node.js with various frameworks such as mithril.js to help us speed up the process of making and deploying websites. A couple of examples of sites I have done here are: [ http://www.gcmotors.co.uk/]( http://www.gcmotors.co.uk/),  [http://www.hwm.co.uk/](http://www.hwm.co.uk/).',
     skills: [
       {
         name: 'Node.js',
@@ -199,11 +199,12 @@ const history = [
     title: 'Personal & Private Projects',
     time: { from: '01/07/2014', to: 'Present Date' },
     text: `I started making personal, and private projects / websites for me and others about half way through my apprentiship when I felt that I had really started to get a grasp of all the basics. Since then I have been implementing more and more complex systems as well as technologys to keep learning. Some of which are listed above with the icons!
-    My latest one would be this very C.V, which has been created in Node.Js with React.JS. a few others:
+    My latest one would be this very C.V, which has been created in Node.Js with React.JS.
+    A few others:
 
 - [theweblancer.co.uk](http://theweblancer.co.uk) (Old and needs updating)
 - [maygerfitness.co.uk](http://maygerfitness.co.uk)
-- I am also working on a Budgeting App using Express.js, MongoDB, Oauth2, and Node.js for the Rest API. React.Js and Node.Js for the View Layer.
+- I am also working on a Budgeting App using Express.js, MongoDB, Oauth2, and Node.js for the Rest API. React.Js and Node.Js for the view layer.
     `,
     skills: [
       {
