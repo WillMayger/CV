@@ -1,27 +1,45 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export class Container extends Component {
-  render() {
-    const backgroundColor = this.props.background;
-    let styles = {},
-        slantClass = 'slant';
-    if (backgroundColor) {
-      styles = {
-        backgroundColor
-      };
-      slantClass += ' slant-' + backgroundColor.split('#').join('');
-    }
-    if (this.props.noSlant) slantClass = '';
+const Container = (props) => {
+  const backgroundColor = props.background;
+  let styles = {};
+  let slantClass = 'slant';
 
-    return (
-      <div className="container-wrap">
-        <div style={styles} className={"container " + slantClass}>
-          <div className="row">
-            {this.props.children}
-          </div>
-          <div className={slantClass}></div>
-        </div>
-      </div>
-    );
+  if (backgroundColor) {
+    styles = {
+      backgroundColor,
+    };
+    slantClass += ` slant-${backgroundColor.split('#').join('')}`;
   }
-}
+  if (props.noSlant) slantClass = '';
+
+  return (
+    <div className="container-wrap">
+      <div style={styles} className={`container ${slantClass}`}>
+        <div className="row">
+          {props.children}
+        </div>
+        <div className={slantClass} />
+      </div>
+    </div>
+  );
+};
+
+Container.defaultProps = {
+  noSlant: undefined,
+  background: undefined,
+  children: '',
+};
+
+Container.propTypes = {
+  noSlant: PropTypes.bool,
+  background: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+};
+
+
+export default Container;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Container } from '../containers/Container';
+import Container from '../containers/Container';
 import { Skill } from '../skills/Skill';
 import { StandardText } from '../text/StandardText';
 
@@ -12,11 +12,11 @@ export class SkillsRegion extends Component {
     }
     this.updateSelected = this.updateSelected.bind(this);
   }
-  
+
   updateSelected(e, selected) {
     this.setState({selected});
   }
-  
+
   render() {
     const backgroundColor = '#fff',
           skills = this.props.skills.map((item, index) => {

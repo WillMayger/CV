@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Container } from '../containers/Container';
+import Container from '../containers/Container';
 import { Reference } from '../reference/Reference';
 import { StandardText } from '../text/StandardText';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Container } from '../containers/Container';
+import Container from '../containers/Container';
 import { ContentText } from '../text/ContentText';
 
 export class ContentRegion extends Component {

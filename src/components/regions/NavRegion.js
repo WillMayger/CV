@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Container } from '../containers/Container';
+import Container from '../containers/Container';
 import { Nav } from '../nav/Nav';
 
 export class NavRegion extends Component {

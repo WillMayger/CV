@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import { Skill } from '../skills/Skill';
-import { ContentText } from '../text/ContentText';
 
 export class History extends Component {
   render() {
@@ -15,7 +14,7 @@ export class History extends Component {
         />
       );
     });
-    
+
     return (
         <div className="history">
           <div className="title">

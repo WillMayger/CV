@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Container } from '../containers/Container';
+import Container from '../containers/Container';
 import { History } from '../history/History';
 import { StandardText } from '../text/StandardText';
 
