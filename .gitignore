@@ -7,13 +7,14 @@
 /coverage
 
 # misc
+jpgCV.psd
+jpgcvfull.jpg
+jpgcvfull2.jpg
+jpgcvmerged.psd
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-jpgCV.psd
-jpgcvfull.jpg
-jpgcvmerged.psd
 
 
