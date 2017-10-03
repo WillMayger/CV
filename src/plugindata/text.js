@@ -5,7 +5,7 @@ Web development is a deep passion for me, even after I finish a day of work I wi
 
 I also like to work until the task at hand is completed, at both work, and personal things. Due to this I have a tendency to annoy my girlfriend when working on projects as It takes a while to pull me away from the screen!
 
-As a side note, I am actively learning french with a native speaker, my girlfriend (ma petite ami!). I often go over to France to visit her family who do not speak a word of english. This suits me well though as I like the challenge and the learning I get from speaking with them and seeing different parts of the world.`,
+As a side note, I am actively learning french with a native speaker, my girlfriend (ma petite amie!). I often go over to France to visit her family who do not speak a word of english. This suits me well though as I like the challenge and the learning I get from speaking with them and seeing different parts of the world.`,
     region: 'Profile' },
   { text: `I am looking to keep learning and pushing myself in the world of web development. The main technologies i want to be improving on and utilizing are Node.js / JS, HTML, CSS. I also have a preference to improving on my knowledge of React.JS and making use of it.
 
