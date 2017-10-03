@@ -2,14 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const SlantText = (props) => {
-  const lines = props.personal.map((item, index) => (
-    <div key={item.type} className="line">
-      <span className="line-number">{`${index + 2}`}</span>
-      <span className="item.type">{item.type}: {'"'}
-        <span className="bold">{item.value}</span>
-        {'"'},</span>
-    </div>
-  ));
+  const lines = props.personal.map((item, index) => {
+    const value = () => {
+      if (item.value.indexOf('http') > -1) {
+        return (
+          <a href={`${item.value}`} target="_blank" title={`${item.value}`}>
+            {item.value}
+          </a>
+        );
+      }
+
+      return item.value;
+    };
+
+    return (
+      <div key={item.type} className="line">
+        <span className="line-number">{`${index + 2}`}</span>
+        <span className="item.type">{item.type}: {'"'}
+          <span className="bold">{value()}</span>
+          {'"'},</span>
+      </div>
+    );
+  });
   const lineLength = props.personal.length;
 
   return (
