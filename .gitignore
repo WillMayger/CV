@@ -3,10 +3,11 @@
 # dependencies
 /node_modules
 
-# private details
-
 # testing
 /coverage
+
+# build
+/build
 
 # misc
 .DS_Store

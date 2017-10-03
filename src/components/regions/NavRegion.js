@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Container from '../containers/Container';
-import { Nav } from '../nav/Nav';
+import Nav from '../nav/Nav';
 
-export class NavRegion extends Component {
-  render() {
-    const backgroundColor = '#fff';
-    return (
-      <Container noSlant={true} background={backgroundColor}>
-        <div className="nav-region">
-          <Nav {...this.props}/>
-        </div>
-      </Container>
-    );
-  }
-}
+const NavRegion = props => (
+  <Container noSlant background={'#fff'}>
+    <div className="nav-region">
+      <Nav {...props} />
+    </div>
+  </Container>
+);
+
+export default NavRegion;

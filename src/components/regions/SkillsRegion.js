@@ -1,33 +1,33 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import Container from '../containers/Container';
-import { Skill } from '../skills/Skill';
-import { StandardText } from '../text/StandardText';
+import Skill from '../skills/Skill';
+import StandardText from '../text/StandardText';
 
-export class SkillsRegion extends Component {
+class SkillsRegion extends Component {
   constructor() {
     super();
     this.state = {
-      selected: 'Node.js'
-    }
+      selected: 'Node.js',
+    };
+
     this.updateSelected = this.updateSelected.bind(this);
   }
 
   updateSelected(e, selected) {
-    this.setState({selected});
+    this.setState({ selected });
   }
 
   render() {
-    const backgroundColor = '#fff',
-          skills = this.props.skills.map((item, index) => {
-            return (
-              <Skill
-              onHover={this.updateSelected}
-              key={this.props.convert(this.props.region + item.name)}
-              {...item}
-              />
-            );
-          })
+    const backgroundColor = '#fff';
+    const skills = this.props.skills.map(item => (
+      <Skill
+        onHover={this.updateSelected}
+        key={this.props.convert(this.props.region + item.name)}
+        {...item}
+      />
+    ))
     ;
 
     return (
@@ -41,3 +41,12 @@ export class SkillsRegion extends Component {
     );
   }
 }
+
+SkillsRegion.propTypes = {
+  skills: PropTypes.array.isRequired,
+  region: PropTypes.string.isRequired,
+  convert: PropTypes.func.isRequired,
+};
+
+export default SkillsRegion;
+

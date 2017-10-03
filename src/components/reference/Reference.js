@@ -1,25 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
+const Reference = props => (
+  <div className="reference">
+    <div className="inner">
+      <span className="name">
+        {props.name}
+      </span>
+      <span>
+        {props.position}
+      </span>
+      <span>
+        {props.email}
+      </span>
+      <span>
+        {props.phone}
+      </span>
+    </div>
+  </div>
+);
 
-export class Reference extends Component {
-  render() {
-    return (
-      <div className="reference">
-        <div className="inner">
-          <span className="name">
-          {this.props.name}
-          </span>
-          <span>
-          {this.props.position}
-          </span>
-          <span>
-          {this.props.email}
-          </span>
-          <span>
-          {this.props.phone}
-          </span>
-        </div>
-      </div>
-    );
-  }
-}
+Reference.propTypes = {
+  name: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  phone: PropTypes.string.isRequired,
+};
+
+export default Reference;

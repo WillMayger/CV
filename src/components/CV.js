@@ -10,13 +10,13 @@ import references from '../plugindata/references'; // content area text
 import downloads from '../plugindata/downloads'; // content area text
 
 // import components
-import { DetailRegion } from './regions/DetailRegion';
-import { NavRegion } from './regions/NavRegion';
-import { SkillsRegion } from './regions/SkillsRegion';
-import { ContentRegion } from './regions/ContentRegion';
-import { HistoryRegion } from './regions/HistoryRegion';
-import { ReferenceRegion } from './regions/ReferenceRegion';
-import { DownloadRegion } from './regions/DownloadRegion';
+import DetailRegion from './regions/DetailRegion';
+import NavRegion from './regions/NavRegion';
+import SkillsRegion from './regions/SkillsRegion';
+import ContentRegion from './regions/ContentRegion';
+import HistoryRegion from './regions/HistoryRegion';
+import ReferenceRegion from './regions/ReferenceRegion';
+import DownloadRegion from './regions/DownloadRegion';
 import Responsive from './Responsive';
 
 export default class CV extends Component {

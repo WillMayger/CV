@@ -1,19 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export class Download extends Component {
-  render() {
-    return (
-      <div className="download-item">
-        <div className="inner">
-          <a  title={this.props.name} href={ "" + this.props.link} download>
-            <img alt={this.props.name} src={ "/images/icon/" + this.props.img} />
-            <span className='text'>
-              {this.props.name}
-            </span>
-            <span className="download-text">Download</span>
-          </a>
-        </div>
-      </div>
-    );
-  }
-}
+const Download = props => (
+  <div className="download-item">
+    <div className="inner">
+      <a title={props.name} href={`${props.link}`} download>
+        <img alt={props.name} src={`/images/icon/${props.img}`} />
+        <span className="text">
+          {props.name}
+        </span>
+        <span className="download-text">Download</span>
+      </a>
+    </div>
+  </div>
+);
+
+Download.propTypes = {
+  name: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+};
+
+export default Download;

@@ -1,24 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import Container from '../containers/Container';
-import { History } from '../history/History';
-import { StandardText } from '../text/StandardText';
+import History from '../history/History';
+import StandardText from '../text/StandardText';
 
-export class HistoryRegion extends Component {
-  render() {
-    const history = this.props.history.map((item, index) => {
-      return (
-        <History key={'history' + index} {...item} />
-      );
-    });
+const HistoryRegion = (props) => {
+  const history = props.history.map(item => (
+    <History key={`history ${item.title}`} {...item} />
+  ));
 
-    return (
-      <Container  background={'#fff'}>
-        <div id={this.props.convert(this.props.region)} className="history-region module-padding">
-          <StandardText region={this.props.region} />
-          {history}
-        </div>
-      </Container>
-    );
-  }
-}
+  return (
+    <Container background={'#fff'}>
+      <div id={props.convert(props.region)} className="history-region module-padding">
+        <StandardText region={props.region} />
+        {history}
+      </div>
+    </Container>
+  );
+};
+
+HistoryRegion.propTypes = {
+  history: PropTypes.array.isRequired,
+  region: PropTypes.string.isRequired,
+  convert: PropTypes.func.isRequired,
+};
+
+export default HistoryRegion;

@@ -1,11 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export class Skill extends Component {
-  render() {
-    return (
-      <div className="skill">
-        <img alt={this.props.name} onMouseOver={(e) => this.props.onHover(e, this.props.name)} title={this.props.name} src={"/images/icon/" + this.props.icon} />
-      </div>
-    );
-  }
-}
+const Skill = props => (
+  <div className="skill">
+    <img
+      alt={props.name}
+      onMouseOver={e => props.onHover(e, props.name)}
+      title={props.name}
+      src={`/images/icon/${props.icon}`}
+    />
+  </div>
+);
+
+Skill.propTypes = {
+  name: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  onHover: PropTypes.func.isRequired,
+};
+
+export default Skill;

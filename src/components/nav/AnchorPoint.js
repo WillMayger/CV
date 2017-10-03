@@ -1,20 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export class AnchorPoint extends Component {
-  
-  smoothScroll(e) {
+const AnchorPoint = (props) => {
+  const smoothScroll = (e) => {
     e.preventDefault();
-    document.querySelector('#' + this.props.region).scrollIntoView({ behavior: 'smooth' });
-  }
-  render() {
-    let last = '';
-    if (this.props.last) last = 'last';
-    return (
-      <div className={"anchor-point " + last}>
-        <a href={'#' + this.props.region} onClick={(e) => this.smoothScroll(e)}>
-          {this.props.value}
-        </a>
-      </div>
-    );
-  }
-}
+    document.querySelector(`#${props.region}`).scrollIntoView({ behavior: 'smooth' });
+  };
+  let last = '';
+  if (props.last) last = 'last';
+  return (
+    <div className={`anchor-point ${last}`}>
+      <a href={`#${props.region}`} onClick={e => smoothScroll(e)}>
+        {props.value}
+      </a>
+    </div>
+  );
+};
+
+AnchorPoint.propTypes = {
+  region: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  last: PropTypes.bool.isRequired,
+};
+
+export default AnchorPoint;

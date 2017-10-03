@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import Container from '../containers/Container';
-import { ContentText } from '../text/ContentText';
+import ContentText from '../text/ContentText';
 
-export class ContentRegion extends Component {
-  render() {
-    return (
-      <Container background={this.props.background}>
-        <div id={this.props.convert(this.props.region)} className="content-region module-padding">
-          <ContentText {...this.props} />
-        </div>
-      </Container>
-    );
-  }
-}
+const ContentRegion = props => (
+  <Container background={props.background}>
+    <div id={props.convert(props.region)} className="content-region module-padding">
+      <ContentText {...props} />
+    </div>
+  </Container>
+);
+
+ContentRegion.propTypes = {
+  background: PropTypes.string.isRequired,
+  region: PropTypes.string.isRequired,
+  convert: PropTypes.func.isRequired,
+};
+
+export default ContentRegion;
