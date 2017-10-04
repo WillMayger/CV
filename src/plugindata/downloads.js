@@ -11,13 +11,13 @@ const downloads = [
   },
   {
     img: 'docimg.png',
-    name: 'cv.docx',
-    link: '/docs/cv.docx',
+    name: 'standard_cv.docx',
+    link: '/docs/standard_cv.docx',
   },
   {
     img: 'pdfimg.png',
-    name: 'cv.pdf',
-    link: '/docs/cv.pdf',
+    name: 'standard_cv.pdf',
+    link: '/docs/standard_cv.pdf',
   },
 ];
 

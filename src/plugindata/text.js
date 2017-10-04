@@ -22,7 +22,6 @@ I want a role that will keep pushing me and challenging me to learn and improve 
 - GCSE: Work skills (BTEC) – C
 - GCSE: Sport (BTEC) – C
 
-
 - AS-LEVEL: Photography - A
 - AS-LEVEL: Certificate in financial studies - A
 - AS-LEVEL: Art – D
