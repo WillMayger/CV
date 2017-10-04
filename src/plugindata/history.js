@@ -28,7 +28,7 @@ const history = [
   {
     title: 'Atos & QA Apprenticeship',
     time: { from: '01/07/2014', to: '01/07/2015' },
-    text: 'I applied and successfully got an Apprenticeship  at QA and then a Apprenticeship Job at Atos to go with the training. In the Apprenticeship we learnt about C#, HTML, CSS and ASP.NET which I passed and now have a City and guilds Software and Web Development Qualification. During my time at Atos, however, from day one I started learning about, and putting to use, JS, Node.Js, CSS, HTML, Jquery and Git. I made many internal applications that helped different departments handle certain things such as an application to help the finance department deal with invoices so there was no room for error, which meant lots of testing. During this time we used many different technologies because we chose the best for each individual task that needed to be done. (most listed above)',
+    text: 'I applied and successfully got an Apprenticeship at QA and then a Apprenticeship Job at Atos to go with the training. In the Apprenticeship we learnt about C#, HTML, CSS and ASP.NET which I passed and now have a City and guilds Software and Web Development Qualification. During my time at Atos, however, from day one I started learning about, and putting to use, JS, Node.Js, CSS, HTML, Jquery and Git. I made many internal applications that helped different departments handle certain things such as an application to help the finance department deal with invoices so there was no room for error, which meant lots of testing. During this time we used many different technologies because we chose the best for each individual task that needed to be done. (most listed above)',
     skills: [
       {
         name: 'Node.js',
