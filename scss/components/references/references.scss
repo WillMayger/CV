@@ -38,10 +38,24 @@
 
 @media (max-width: 767px) {
   .reference-region {
-    text-align: center;
 
     .reference {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .reference-region {
+
+    .reference {
+      width: 50%;
+
+      span {
+        font-size: 14px;
+        padding-left: 18px;
+        padding-right: 18px;
+      }
     }
   }
 }

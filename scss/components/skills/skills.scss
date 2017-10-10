@@ -60,3 +60,21 @@
       }
     }
   }
+
+@media (max-width: 1199px) {
+  .selected-skill {
+    display: none;
+  }
+  .skill {
+    line-height: 80px;
+    max-height: 80px;
+    max-width: 100px;
+    padding: 10px 20px;
+
+    img {
+      line-height: 80px;
+      max-height: 60px;
+      max-width: 60px;
+    }
+  }
+}

@@ -151,3 +151,53 @@ $slant-text-min-height: 500px;
     }
   }
 }
+
+
+@media (max-width: 1199px) {
+  .slant-text {
+    min-height: 400px;
+
+    &.left {
+      .border:after {
+        border-top: 400px solid transparent;
+      }
+    }
+
+    &.half {
+      width: 80%;
+    }
+
+    .text-box {
+      padding: 30px 0 30px 20px;
+
+      span {
+        display: inline-block;
+      }
+
+      &.bracket-system {
+        .line {
+          font-size: 25px;
+        }
+
+        span {
+          &:not(.line-number) {
+            padding-left: 20px;
+          }
+
+          &.line-number {
+            display: none;
+          }
+
+          span {
+            font-size: 25px;
+          }
+
+          .const {
+            padding-right: 20px;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
