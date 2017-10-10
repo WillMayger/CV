@@ -153,7 +153,7 @@ $slant-text-min-height: 500px;
 }
 
 
-@media (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .slant-text {
     min-height: 400px;
 
@@ -198,6 +198,23 @@ $slant-text-min-height: 500px;
           }
         }
       }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .slant-text {
+    min-height: 500px;
+
+    &.left {
+      .border:after {
+        border-top: 500px solid transparent;
+      }
+    }
+
+    &.half {
+      width: 80%;
     }
   }
 }
