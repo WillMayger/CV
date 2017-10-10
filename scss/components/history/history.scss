@@ -1,6 +1,6 @@
 .history-region {
   text-align: center;
-  
+
   .standard-text{
      padding-bottom: 30px;
   }
@@ -8,7 +8,7 @@
 
 .history {
   padding-bottom: 70px;
-  
+
   .title {
     display: block;
     margin: 0 auto;
@@ -19,17 +19,47 @@
     border-bottom: 1px solid #333;
     font-weight: 300;
     margin-bottom: 30px;
-    
+
     .space {
       padding-left: 30px;
       padding-right: 30px;
     }
   }
-  
+
   .content {
     font-size: 21px;
     line-height: 30px;
     max-width: 980px;
     margin: 0 auto;
   }
+}
+
+@media (max-width: 767px) {
+  .content-text {
+    .text-box {
+      .markdown-box {
+        font-size: 16px;
+      }
+    }
+  }
+
+
+  .history {
+    padding-bottom: 30px;
+    .title {
+      line-height: 35px;
+      height: 82px;
+      font-size: 18px;
+
+      .space {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+  }
+
+  .content {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
 }

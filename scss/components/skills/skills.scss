@@ -1,7 +1,7 @@
 .skills-region {
   text-align: center;
   padding-top: 30px;
-  
+
   .standard-text {
     padding-bottom: 15px;
   }
@@ -43,3 +43,20 @@
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 767px) {
+    .selected-skill {
+      display: none;
+    }
+    .skill {
+      max-height: 60px;
+      max-width: 70px;
+      line-height: 70px;
+      padding: 5px 10px;
+
+      img {
+        max-height: 50px;
+        max-width: 50px;
+      }
+    }
+  }

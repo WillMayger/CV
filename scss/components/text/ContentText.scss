@@ -15,3 +15,13 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .content-text {
+    .text-box {
+      .markdown-box {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@
   width: 100%;
   margin: 0 auto;
   max-width: 1366px; //Most common size.
-  width: 1366px; //temporary
+  width: 100%; //temporary
   box-shadow: 0 0 20px 0 #000;
 }
 
@@ -73,12 +73,12 @@
   right: 0;
   background: #333;
   color: #fff;
-  
+
   &.hidden {
     display: none;
     visibility: hidden;
   }
-  
+
   span {
     position: absolute;
     text-align: center;
@@ -90,6 +90,26 @@
     left: 0;
     right: 0;
     max-width: 280px;
+  }
+}
+
+@media (max-width: 768px)  {
+  .container-wrap {
+
+    &:nth-child(2) .container {
+      border-bottom: 0px solid $marrs-green;
+}
+
+.container {
+  border-bottom: 10px solid $marrs-green;
+    .slant {
+      display: none;
+    }
+    &.slant {
+      position: relative;
+      padding-bottom: 30px;
+    }
+  }
   }
 }
 

@@ -7,7 +7,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-
 .heading {
   font-size: 35px;
 }
@@ -45,4 +44,24 @@ a {
 
 .pad-hoz5 {
   padding: 0 5px;
+}
+
+
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .module-padding {
+    padding: 0 10px;
+  }
+
+  h2 {
+    padding-top: 20px;
+    font-size: 26px;
+  }
 }

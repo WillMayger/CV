@@ -59,45 +59,95 @@ $slant-text-min-height: 500px;
       display: inline-block;
     }
 
-      &.bracket-system {
+    &.bracket-system {
 
-        .line {
-          display: block;
-          padding: 10px 0;
-          padding-right: 0;
-          font-size: 32px;
+      .line {
+        display: block;
+        padding: 10px 0;
+        padding-right: 0;
+        font-size: 32px;
+      }
+
+      span {
+
+        &:not(.line-number) {
+          padding-left: 40px;
+
+          &.bracket,
+          span {
+            padding-left: 0;
+          }
+        }
+
+        &.line-number {
+          position: relative;
+          top: 3px;
+          padding: 0 30px 0 5px;
+          color: transparentize(#fff, 0.5);
         }
 
         span {
+          display: inline-block;
+          font-size: 34px;
+        }
 
+        .const {
+          position: relative;
+          padding-right: 20px;
+          font-size: 34px;
+          top: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .slant-text {
+    min-height: 300px;
+    &.left {
+      .border {
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    &.half {
+      width: 100%;
+    }
+
+    .text-box {
+      padding: 30px 0 30px 10px;
+
+      span {
+        display: inline-block;
+      }
+
+      &.bracket-system {
+        .line {
+          font-size: 15px;
+        }
+
+        span {
           &:not(.line-number) {
-            padding-left: 40px;
-
-            &.bracket,
-            span {
-              padding-left: 0;
-            }
+            padding-left: 10px;
           }
 
           &.line-number {
-            position: relative;
-            top: 3px;
-            padding: 0 30px 0 5px;
-            color: transparentize(#fff, 0.5);
+            display: none;
           }
 
           span {
-            display: inline-block;
-            font-size: 34px;
+            font-size: 15px;
           }
 
           .const {
-            position: relative;
-            padding-right: 20px;
-            font-size: 34px;
-            top: 1px;
+            padding-right: 10px;
+            font-size: 15px;
           }
         }
       }
     }
   }
+}

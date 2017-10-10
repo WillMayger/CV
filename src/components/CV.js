@@ -61,11 +61,11 @@ export default class CV extends Component {
   }
 
   render() {
-    if (this.state.responsiveWidth <= 1366) {
-      return (
-        <Responsive width={this.state.responsiveWidth} />
-      );
-    }
+    // if (this.state.responsiveWidth <= 1366) {
+    //   return (
+    //     <Responsive width={this.state.responsiveWidth} />
+    //   );
+    // }
 
     const regionToAnchorPoint = (regionValue) => {
       let region = regionValue;
